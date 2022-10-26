@@ -1,0 +1,3 @@
+{"Nome: ":"Mateus"," Sobrenome: ":"Brandl"," Email: ":"mateusmotorama03@gmail.com"," Tamanho da senha: ":8," Data de nascimento: ":"2003-08-28"," Idade: ":"19"," Status parente: ":"E parente"," Sexo: ":"Masculino"}
+
+{"Nome: ":"Valdete"," Sobrenome: ":"Brandl"," Email: ":"valdeterussibrandl@gmail.com"," Tamanho da senha: ":12," Data de nascimento: ":"1980-07-10"," Idade: ":"42"," Status parente: ":"Nao e parente"," Sexo: ":"Feminino"}

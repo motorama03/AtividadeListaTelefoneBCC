@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head class="tudo">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Primeiro site</title>
+
+    <Style>
+
+        .Centroform{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .body{
+            background-image: linear-gradient(rgb(244, 250, 244), rgb(146, 146, 146));
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: rgb(255, 255, 255, 0.6);
+            transform: translate(-50%, -50%);
+            padding: 15px;
+            width: 35%;
+        }
+        .inputbox{
+            position: relative;
+            text-align: center;
+        }
+        .errado{
+            text-decoration: red;
+        }
+    </Style>
+
+    
+</head>
+<body class="body">
+
+    <script src="js.js"></script>
+
+            <form action="traTAMENTO.PHP" method="post" onsubmit="validafuncao()">
+                    <table>
+                    
+                            <div class="inputbox">
+                                <h3 class="container-fluid">Cadastro de contatos</h3>
+                                <H2 class="container-fluid">Atenção </H2>
+                                <a class="container-fluid" href="listinha.html">Lista dos registrados</a>
+                            </div>
+                            <div class="inputbox">
+                                <div class="">
+                                    <label for="nome" id="nome" name="nome"></label>Informe o nome do contato<br>
+                                    <input type="text" id="in_nome" name="nome" value=""><br>
+                                    <h8 class="text-danger" id="nomeinvalido"></h8>
+                                    <label for="sobrenome" id="sobrenome" name="sobrenome"></label>Informe o sobrenome do contato<br>
+                                    <input type="text" id="in_sobrenome" name="sobrenome" value=""><br><br>
+                                    <h8 class="text-danger" id="sobrenomeinvalido"></h8>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="inputbox">
+                                <div class="">
+                                    <label for="email" id="email" name="email" ></label>Digite um e-mail<br>
+                                    <input type="email" id="in_email" name="email" value="" ><br>
+                                    <h8 class="text-danger" id="emailinvalido"></h8>
+                                    <label for="senha" id="senha" name="senha"></label>Digite uma senha<br>
+                                    <input type="password" id="in_senha" name="senha" value="" ><br><br>
+                                    <h8 class="text-danger" id="senhainvalida"></h8>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="inputbox">
+                                <div class="">
+                                    <label for="datanasc" id="datanasc" name="datanasc">Informe sua data de nascimento</label><br>
+                                    <input type="date" id="in_datanasc" name="datanasc" value="" class="datanasc" ><br>
+                                    <h8 class="text-danger" id="datanascinvalida"></h8>
+                                    <label for="idade" id="idade" name="idade">Informe sua idade</label><br>
+                                    <input type="text" id="in_idade" name="idade" value="" class="idade"  ><br><br>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="inputbox">
+                                <div class="">
+                                <input type="radio" id="gaules" name="gaules" value="1" checked>Parente<br>
+                                <input type="radio" id="gaules" name="gaules" value="2">Não é parente<br><br>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="inputbox">Selecione uma rede social<br>
+                                <div class="">
+                                    <select name="social" id="social" ><br>
+                                        <option value="tiposocial">Facebook</option>
+                                        <option value="tiposocial">Instagram</option>
+                                        <option value="tiposocial">Twitter</option>
+                                    </select><br>
+                                        <input type="text" id="redesocial" name="redesocial" placeholder="Informe seu @">
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="inputbox">Origem do ctt<br>
+                                <div class="">
+                                    <select name="trabalho" id="trabalho" required><br>
+                                        <option value="tiposervico">Escola</option>
+                                        <option value="tiposervico">Trabalho</option>
+                                        <option value="tiposervico">Night</option>
+                                        <option value="tiposervico">Familia</option>
+                                        <option value="tiposervico">Dia-a-dia</option>
+                                    </select><br><br>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="inputbox">
+                                <div>
+                                    <input type="radio" id="gaulles" name="gaulles" value="1" checked>Masculino<br>
+                                    <input type="radio" id="gaulles" name="gaulles" value="2">Feminino<br>
+                                    <input type="radio" id="gaulles" name="gaulles" value="3">Outros<br><br>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="inputbox">
+                                <div class="">    
+                                    <label for="imagem" id="imagem"></label>Escolha a foto do contato!<br>
+                                    <input type="file" id="imagem" name="imagem" ><br><br>
+                                </div>
+                            </div>
+                        
+                        <div class="inputbox">
+                            <div class="">
+                                <input type="submit" id="enviar" name="enviar" >
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="inputbox">
+                                <h4>Resultado do cadastro (via JSON):</h4>
+                                <h7><b id="area"> </b></h7>
+                            </div>
+                        </div>
+                        
+                    </table>
+                    
+            </form>
+    </body>
+<!-- Roda pé -->
+<footer class="tudo">
+
+</footer> 

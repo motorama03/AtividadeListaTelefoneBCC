@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <style>
+        @media screen and (max-width: 768px){
+                 section ,  aside{
+                            width: 100%;         
+                            padding: 0%;         
+                            background-color: rgb(237, 245, 135);         
+                            margin: auto;          
+                        } 
+                    } 
+        @media screen and (max-width: 600px){
+                div li{
+                        text-align: center;
+                        background-color: rgb(215, 236, 135);
+                        width: 100%;
+                        margin: auto;     
+                    }  
+                } 
+        @media screen and (max-width:300px){
+                table{
+                    background-color: darkslategray;
+                    }     
+                img{         width: 100%;     
+                } 
+            }
+
+        .position{
+            position: relative;
+            text-align: left;
+        }
+        body{
+            background-color: rgb(219, 245, 244);
+            height: 100%;
+            width: 220px;
+        }
+        .img{
+            height: 60%;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <button type="button"><a href="HomePg.html">Voltar para o menu</a></button><br>
+
+    <h2>Dados do contato</h2>
+    <div class="position"><h3>Parente</h3>
+        
+            <img src="data:image/jpeg;base64,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" width="100">
+            <li><h5>Nome: Juliana Silva</h5></li>
+            <li><h5>Contato:(42)988234384</h5></li>
+            <li><h5>E-mail: juhjuhgatinha@gmail.com</h5></li>
+            <li><h5>Data de nascimento: 29/10/2000</h5></li>
+            <li><h5>Idade: 21</h5></li>
+            <li><h5>Origem do contato: Night</h5></li>
+            <li><h5>Rede social: JulianaSilva</h5></li>
+            <li><h5>Formação: Pós graduada em Administração</h5></li>
+            <li><h5>Sexo: Feminino</h5></li>
+
+    </div>
+</body>
